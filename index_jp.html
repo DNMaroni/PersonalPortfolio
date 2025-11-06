@@ -999,20 +999,98 @@
               </div>
             </section>
             <footer class="max-w-md pb-16 text-sm text-slate-400 sm:pb-0">
-              <p><a href="https://code.visualstudio.com/"
+              <p>
+                以下は、Googleの
+                <a href="https://developer.chrome.com/docs/lighthouse/overview"
                   class="font-medium text-slate-400 hover:text-indigo-300 focus-visible:text-indigo-300" target="_blank"
-                  rel="noreferrer noopener" aria-label="Visual Studio Code (新しいタブで開く)">Visual Studio Code</a>,
-                で書かれたサイトで、
+                  rel="noreferrer noopener" aria-label="Google Lighthouse（新しいタブで開きます）">Lighthouse</a>
+                ツールを使用してこのサイトのレポートを生成した際に得られたメトリクスのデモンストレーションです。
+                （テストは拡張機能の影響を受けないシークレットモードで、Web版にて実行されました。）
+              </p>
+
+              <div class="scores">
+                <div class="score">
+                  <div class="circle">99</div>
+                  <p>パフォーマンス</p>
+                </div>
+                <div class="score">
+                  <div class="circle">100</div>
+                  <p>アクセシビリティ</p>
+                </div>
+                <div class="score">
+                  <div class="circle">100</div>
+                  <p>ベストプラクティス</p>
+                </div>
+                <div class="score">
+                  <div class="circle">100</div>
+                  <p>SEO</p>
+                </div>
+              </div>
+
+              <style>
+                .scores {
+                  display: flex;
+                  gap: 24px;
+                  justify-content: center;
+                  align-items: center;
+                  background: transparent;
+                  padding: 20px;
+                }
+
+                .score {
+                  text-align: center;
+                  color: white;
+                  font-family: Arial, sans-serif;
+                }
+
+                .circle {
+                  width: 60px;
+                  height: 60px;
+                  border: 3px solid #00CC66;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  background-color: rgba(0, 255, 128, 0.15);
+                  justify-content: center;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #00CC66;
+                  margin: 0 auto 6px;
+                }
+
+                .score p {
+                  font-size: 13px;
+                  color: #ddd;
+                  font-weight: 600;
+                  line-height: 1.2;
+                }
+              </style>
+              
+              <p>
+                このページは、最新のウェブ開発におけるベストプラクティスに従って構築されており、
+                <a href="https://code.visualstudio.com/"
+                  class="font-medium text-slate-400 hover:text-indigo-300 focus-visible:text-indigo-300" target="_blank"
+                  rel="noreferrer noopener" aria-label="Visual Studio Code（新しいタブで開きます）">Visual Studio
+                  Code</a>で作成され、
                 <a href="https://tailwindcss.com/"
                   class="font-medium text-slate-400 hover:text-indigo-300 focus-visible:text-indigo-300" target="_blank"
-                  rel="noreferrer noopener" aria-label="Tailwind CSS (新しいタブで開く)">Tailwind CSS</a> フレームワークを使用し、
+                  rel="noreferrer noopener" aria-label="Tailwind CSS（新しいタブで開きます）">Tailwind CSS</a>
+                フレームワークを使用しています。
                 <a href="https://github.com/"
                   class="font-medium text-slate-400 hover:text-indigo-300 focus-visible:text-indigo-300" target="_blank"
-                  rel="noreferrer noopener" aria-label="Github (新しいタブで開く)">Github</a>リポジトリにホストされています。
-                べてのテキストは <a href="https://rsms.me/inter/"
+                  rel="noreferrer noopener" aria-label="Github（新しいタブで開きます）">Github</a>
+                のリポジトリにホスティングされ、
+                <a href="https://www.cloudflare.com/"
                   class="font-medium text-slate-400 hover:text-indigo-300 focus-visible:text-indigo-300" target="_blank"
-                  rel="noreferrer noopener" aria-label="Inter (新しいタブで開く)">Inter</a> フォントを使用して書かれています。
+                  rel="noreferrer noopener" aria-label="Cloudflare（新しいタブで開きます）">Cloudflare</a>
+                のキャッシュシステムを利用しています。
+                すべてのテキストは
+                <a href="https://rsms.me/inter/"
+                  class="font-medium text-slate-400 hover:text-indigo-300 focus-visible:text-indigo-300" target="_blank"
+                  rel="noreferrer noopener" aria-label="Inter（新しいタブで開きます）">Inter</a>
+                フォントを使用して書かれています。
               </p>
+
             </footer>
           </main>
         </div>
